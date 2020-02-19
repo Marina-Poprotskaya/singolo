@@ -1,31 +1,31 @@
 @font-face{
     font-family: 'Lato';
     src: local('Lato-Light'); 
-    src: url(../assets/fonts/Lato/Lato-Light.ttf);
+    src: url(assets/fonts/Lato/Lato-Light.ttf);
     font-weight: 300;
     font-style: normal;
     }
 
-    @font-face{
+@font-face{
     font-family: 'Lato';
     src: local('Lato-Regular'); 
-    src: url(../assets/fonts/Lato/Lato-Regular.ttf);
+    src: url(assets/fonts/Lato/Lato-Regular.ttf);
     font-weight: 400;
     font-style: normal;
     }
 
-    @font-face{
+@font-face{
     font-family: 'Lato';
     src: local('Lato-Bold'); 
-    src: url(../assets/fonts/Lato/Lato-Bold.ttf);
+    src: url(assets/fonts/Lato/Lato-Bold.ttf);
     font-weight: 700;
     font-style: normal;
     }
 
-     @font-face{
+@font-face{
     font-family: 'Lato';
     src: local('Lato-Black'); 
-    src: url(../assets/fonts/Lato/Lato-Black.ttf);
+    src: url(assets/fonts/Lato/Lato-Black.ttf);
     font-weight: 900;
     font-style: normal;
     }
@@ -189,6 +189,11 @@ body {
 .third-top .insert-right p,
 .third-bottom .insert-right h3,
 .third-top .insert-right h3{
+    margin-left: 3px;
+}
+
+.third-bottom .insert-right p,
+.third-top .insert-right p {
     margin-left: 2px;
 }
 
@@ -235,6 +240,8 @@ body {
 
  .insert-right {
      width: 222px;
+     overflow: hidden;
+     height: 94px;
  }
 
  .services-wrapper h2 {
@@ -243,7 +250,6 @@ body {
      padding-bottom: 28px;
      line-height: 20px;
      text-align: justify;
-
  }
 
  .services-wrapper:first-child p {
