@@ -1,0 +1,253 @@
+@font-face{
+    font-family: 'Lato';
+    src: local('Lato-Light'); 
+    src: url(../assets/fonts/Lato/Lato-Light.ttf);
+    font-weight: 300;
+    font-style: normal;
+    }
+
+    @font-face{
+    font-family: 'Lato';
+    src: local('Lato-Regular'); 
+    src: url(../assets/fonts/Lato/Lato-Regular.ttf);
+    font-weight: 400;
+    font-style: normal;
+    }
+
+    @font-face{
+    font-family: 'Lato';
+    src: local('Lato-Bold'); 
+    src: url(../assets/fonts/Lato/Lato-Bold.ttf);
+    font-weight: 700;
+    font-style: normal;
+    }
+
+     @font-face{
+    font-family: 'Lato';
+    src: local('Lato-Black'); 
+    src: url(../assets/fonts/Lato/Lato-Black.ttf);
+    font-weight: 900;
+    font-style: normal;
+    }
+
+* {
+    margin: 0;
+    padding: 0;
+}
+     
+body {
+    font-family: 'Lato', Arial, sans-serif;
+    width: 1020px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container {
+    width: 940px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
+}
+
+.header {
+    height: 96px;
+    background-color: #2d303a;
+    border-bottom: 6px solid #323746;
+    box-sizing: border-box;
+}
+
+.header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.header-wrapper h1 {
+    font-weight: 700;
+    font-size: 25px;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.header-wrapper h1 span {
+    color: #f06c64;
+}
+
+.header-insert ul li {
+    display: inline-block;
+    list-style-type: none;
+    position: relative;
+}
+
+.header-insert ul li:not(:last-child) a::after {
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    top: 55%;
+    right: -4px;
+    background-color: #494e62;
+}
+
+.header-insert li a {
+    display: block;
+    padding-top: 49px;
+    padding-bottom: 40px;
+    text-decoration: none;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.header-insert li a:hover {
+    color: #f06c64;
+}
+
+.header-insert li:not(:last-child) a {
+    padding-left: 12px;
+    padding-right: 13px;
+}
+
+.header-insert li:last-child a {
+    padding-left: 12px;
+}
+
+.slider {
+    height: 600px;
+    background-color: #f06c64;
+    position: relative;
+    box-sizing: border-box;
+    border-bottom: 6px solid #ea676b;
+}
+
+.slider img:first-child {
+    position: absolute;
+    top: 280px;
+    left: 43px;
+}
+
+.slider img:first-child:hover {
+    left: 37px;
+    cursor: pointer;
+}
+
+.slider img:last-child {
+    position: absolute;
+    top: 280px;
+    right: 41px;
+}
+
+.slider img:last-child:hover {
+    right: 35px;
+    cursor: pointer;
+}
+
+.slider img:nth-child(2) {
+    position: absolute;
+    top: 52px;
+    left: 112px;
+    box-shadow: 25px 25px 0  #ce5d56;
+}
+
+.slider img:nth-child(3) {
+    position: absolute;
+    top: 174px;
+    right: 137px;
+    box-shadow: 25px 25px 0  #ce5d56;
+}
+
+.services {
+    height: 500px;
+    box-sizing: border-box;
+    background-color: #f2f2f2;
+    border-bottom: 6px solid #ffffff;
+    color: #666d89;
+}
+
+.services-wrapper:first-child {
+    padding-top: 67px;
+}
+
+.services-insert-horizontal {
+    display: flex;
+    justify-content: space-between;
+}
+
+.services-insert-horizontal:first-child {
+    padding-bottom: 29px;
+}
+
+.services-insert-tb {
+    display: flex;
+    justify-content: space-between;
+    width: 302px;
+}
+
+.insert-left {
+    width: 57px;
+    height: 57px;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 2px solid #686f8b;
+    border-radius: 50%;
+}
+
+.pen {
+    background-image: url(assets/images/pen.png);
+}
+
+.bulb {
+    background-image: url(assets/images/bulb.png);
+}
+
+.heart {
+    background-image: url(assets/images/heart.png);
+}
+
+.phone {
+    background-image: url(assets/images/phone.png);
+}
+
+.bubble {
+    background-image: url(assets/images/bubble.png);
+}
+
+.star {
+    background-image: url(assets/images/star.png);
+}
+
+ .insert-right {
+     width: 222px;
+ }
+
+ .services-wrapper h2 {
+     font-weight: 900;
+     font-size: 30px;
+     padding-bottom: 28px;
+     line-height: 20px;
+     text-align: justify;
+
+ }
+
+ .services-wrapper:first-child p {
+    font-weight: 300;
+    font-size: 18px;
+    padding-bottom: 46px;
+    line-height: 28px;
+    text-align: justify;
+ }
+
+ .insert-right h3 {
+    font-weight: 900;
+    font-size: 18px;
+    padding-bottom: 6px;
+ }
+
+ .insert-right p {
+    font-weight: 400;
+    font-size: 12px;
+    text-align: justify;
+    line-height: 22px;
+ }
