@@ -185,6 +185,13 @@ body {
     width: 302px;
 }
 
+.third-bottom .insert-right p,
+.third-top .insert-right p,
+.third-bottom .insert-right h3,
+.third-top .insert-right h3{
+    margin-left: 2px;
+}
+
 .insert-left {
     width: 57px;
     height: 57px;
@@ -196,26 +203,34 @@ body {
 
 .pen {
     background-image: url(assets/images/pen.png);
+    margin-top: 2px;
 }
 
 .bulb {
     background-image: url(assets/images/bulb.png);
+    margin-top: 2px;
 }
 
 .heart {
     background-image: url(assets/images/heart.png);
+    margin-top: 2px;
+    margin-left: 1px;
 }
 
 .phone {
     background-image: url(assets/images/phone.png);
+    margin-top: 2px;
 }
 
 .bubble {
     background-image: url(assets/images/bubble.png);
+    margin-top: 2px;
 }
 
 .star {
     background-image: url(assets/images/star.png);
+    margin-top: 2px;
+    margin-left: 1px;
 }
 
  .insert-right {
