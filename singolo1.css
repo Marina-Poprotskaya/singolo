@@ -36,17 +36,17 @@
 }
      
 body {
-    font-family: 'Lato', Arial, sans-serif;
     width: 1020px;
     margin-left: auto;
     margin-right: auto;
+    font-family: 'Lato', Arial, sans-serif;
 }
 
 .container {
     width: 940px;
+    height: 100%;
     margin-left: auto;
     margin-right: auto;
-    height: 100%;
 }
 
 .header {
@@ -75,14 +75,14 @@ body {
 }
 
 .header-insert ul li {
+    position: relative;
     display: inline-block;
     list-style-type: none;
-    position: relative;
 }
 
 .header-insert ul li:not(:last-child) a::after {
-    content: '';
     position: absolute;
+    content: '';
     width: 2px;
     height: 2px;
     top: 55%;
@@ -94,11 +94,11 @@ body {
     display: block;
     padding-top: 49px;
     padding-bottom: 40px;
-    text-decoration: none;
-    color: #ffffff;
-    text-transform: uppercase;
     font-weight: bold;
     font-size: 12px;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-decoration: none;
 }
 
 .header-insert li a:hover {
@@ -115,11 +115,11 @@ body {
 }
 
 .slider {
+    position: relative;
     height: 600px;
     background-color: #f06c64;
-    position: relative;
-    box-sizing: border-box;
     border-bottom: 6px solid #ea676b;
+    box-sizing: border-box;
 }
 
 .slider img:first-child {
@@ -174,10 +174,10 @@ body {
 
 .services {
     height: 500px;
-    box-sizing: border-box;
     background-color: #f2f2f2;
     border-bottom: 6px solid #ffffff;
     color: #666d89;
+    box-sizing: border-box;
 }
 
 .services-wrapper:first-child {
@@ -254,30 +254,30 @@ body {
 
  .insert-right {
      width: 222px;
-     overflow: hidden;
      height: 94px;
+     overflow: hidden;
  }
 
  .services-wrapper h2 {
+     padding-bottom: 28px;
      font-weight: 900;
      font-size: 30px;
-     padding-bottom: 28px;
      line-height: 20px;
      text-align: justify;
  }
 
  .services-wrapper:first-child p {
+    padding-bottom: 46px;
     font-weight: 300;
     font-size: 18px;
-    padding-bottom: 46px;
     line-height: 28px;
     text-align: justify;
  }
 
  .insert-right h3 {
+    padding-bottom: 6px;
     font-weight: 900;
     font-size: 18px;
-    padding-bottom: 6px;
  }
 
  .insert-right p {
