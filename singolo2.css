@@ -49,7 +49,6 @@ body {
     margin-right: auto;
 }
 
-
 .portfolio {
     height: 870px;
     box-sizing: border-box;
@@ -57,11 +56,10 @@ body {
     border-bottom: 6px solid #323746;
 }
 
-
 .portfolio h2,
 .about-us h2 {
     font-size: 30px;
-    font-weight: 700;
+    font-weight: 900;
     color: #666d89;
 }
 
@@ -76,23 +74,129 @@ body {
 .about-us__staff p {
     font-size: 12px;
     font-weight: 400;
-    color: #767e9e;
 }
 
+.tag_not-selected {
+    color: #767e9e;
+    border: 1px solid #767e9e;
+}
+
+.tag_selected {
+    color: #c5c5c5;
+    border: 1px solid #c5c5c5;
+}
 .portfolio__tags span {
     display: inline-block;
-    border: 1px solid #767e9e;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding: 2px 6px;
+    border-radius: 5px;
+    margin-top: 15px;
+    margin-bottom: 19px;
+    margin-right: 9px;
+    cursor: pointer;
 }
 
+.portfolio__tags span:nth-child(3) {
+    margin-right: 6px;
+}
 
+.portfolio__tags span:nth-child(1) {
+    padding-right: 7px;
+}
+
+.portfolio h2 {
+    padding-top: 60px;
+    padding-bottom: 23px;
+}
 
 .portfolio__works {
     display: flex;
     justify-content: space-between;
+    height: 610px;
+    overflow: hidden;
+}
+
+.portfolio__photo img {
+    padding-bottom: 17px;
 }
 
 .portfolio__works .portfolio__photo {
     width: 220px;
+}
+
+.about-us {
+    height: 735px;
+    background-color: #f2f2f2;
+    border-bottom: 6px solid #ffffff;
+    box-sizing: border-box;
+}
+
+.about-us__staff-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-us__staff {
+    width: 300px;
+}
+
+.about-us__staff h3 {
+    padding-top: 12px;
+    padding-bottom: 9px;
+    color: #666d89;
+    font-weight: 900;
+    letter-spacing: -0.02em;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.about-us__staff p {
+    color: #767e9e;
+    text-align: justify;
+    line-height: 20px;
+    letter-spacing: -0.025em
+}
+
+.about-us h2 {
+    padding-top: 60px;
+    padding-bottom: 18px;
+}
+
+.about-us .container > p {
+    margin-bottom: 44px;
+    line-height: 30px;
+    text-align: justify;
+} 
+
+.icons-wrapper {
+    display: flex;
+    width: 154px;
+    justify-content: space-between;
+    padding-top: 25px;
+}
+
+.icon {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #6a718c;
+    border-radius: 50%;
+}
+
+.icon:hover {
+    border: 2px solid #6a718c;
+}
+
+.icons__facebook {
+    background: url(assets/images/facebook.png) center no-repeat;
+}
+
+.icons__google {
+    background: url(assets/images/google.png) center no-repeat;
+}
+
+.icons__twitter {
+    background: url(assets/images/twitter.png) center no-repeat;
+}
+
+.icons__linkedin {
+    background: url(assets/images/linkedin.png) center no-repeat;
 }
