@@ -48,3 +48,51 @@ body {
     margin-left: auto;
     margin-right: auto;
 }
+
+
+.portfolio {
+    height: 870px;
+    box-sizing: border-box;
+    background-color: #2d303a;
+    border-bottom: 6px solid #323746;
+}
+
+
+.portfolio h2,
+.about-us h2 {
+    font-size: 30px;
+    font-weight: 700;
+    color: #666d89;
+}
+
+.portfolio p,
+.about-us .container > p {
+    font-size: 18px;
+    font-weight: 300;
+    color: #767e9e;
+}
+
+.portfolio__tags,
+.about-us__staff p {
+    font-size: 12px;
+    font-weight: 400;
+    color: #767e9e;
+}
+
+.portfolio__tags span {
+    display: inline-block;
+    border: 1px solid #767e9e;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+
+
+.portfolio__works {
+    display: flex;
+    justify-content: space-between;
+}
+
+.portfolio__works .portfolio__photo {
+    width: 220px;
+}
