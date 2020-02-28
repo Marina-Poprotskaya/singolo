@@ -95,6 +95,10 @@ body {
     cursor: pointer;
 }
 
+.tag_not-selected:hover {
+    color: #c5c5c5;
+}
+
 .portfolio__tags span:nth-child(3) {
     margin-right: 6px;
 }
