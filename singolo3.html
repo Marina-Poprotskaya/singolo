@@ -12,12 +12,38 @@
             <h2>Get a Quote</h2>
             <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
             <div class="contact-us__information">
-                <form class="contact-us__field"></form>
-                <div class="contact-us__field"></div>
+                <form class="contact-us__field" method="post">
+                    <input type="text" name="name" required placeholder="Name(Required)">
+                    <input type="email" name="email" required placeholder="Email(Required)">
+                    <input type="text" name="subject" placeholder="Subject">
+                    <textarea name="message" placeholder="Describe your project in detail..."></textarea> 
+                    <button class="button">Submit</button> 
+                </form>
+                <div class="contact-us__field">
+                    <h3>Contact information</h3>
+                    <p>Quisque hendrerit purus dapibus, ornare nibh vitae, viver-<wbr>ra nibh. Fusce vitae aliquam tellus. Proin sit amet volutpat libero. Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis. </p>
+                    <div class="our-contacts">
+                        <span class="location">Elm St. 14/05 Lost City </span>
+                        <a class="phone-to" href="tel:035283318635">03528 331 86 35</a>
+                        <a class="mail-to" href="mailto:info@singolo.com">info@singolo.com</a>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
-    <footer class="footer"></footer>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__wrapper">
+                <span>&copy; Copyright 2013</span>
+                <div class="icons-wrapper-f">
+                    <a href="#" class="icon-f icons__facebook-f"></a>
+                    <a href="#" class="icon-f icons__google-f"></a>
+                    <a href="#" class="icon-f icons__twitter-f"></a>
+                    <a href="#" class="icon-f icons__linkedin-f"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
 
     
 </body>
