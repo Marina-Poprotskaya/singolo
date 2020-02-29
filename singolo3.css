@@ -115,52 +115,14 @@ form.contact-us__field textarea {
     font-family: 'Lato', Arial, sans-serif;
 }
 
-textarea::-webkit-input-placeholder {
-    color: #ec7e7e !important;
-}
-     
-textarea:-moz-placeholder { 
-    color: #ec7e7e !important;  
-}
-     
-textarea::-moz-placeholder { 
-    color: #ec7e7e !important;  
-}
-     
-textarea:-ms-input-placeholder {  
-    color: #ec7e7e !important;  
+input[type="text"],
+input[type="email"],
+::placeholder {
+    color: #ec7e7e ;
 }
 
-input[type="email"]::-webkit-input-placeholder {
-    color: #ec7e7e !important;
-    }
-     
-input[type="email"]:-moz-placeholder { 
-    color: #ec7e7e !important;  
-}
-     
-input[type="email"]::-moz-placeholder { 
-    color: #ec7e7e !important;  
-}
-     
-input[type="email"]:-ms-input-placeholder {  
-    color: #ec7e7e !important;  
-}
-
-input::-webkit-input-placeholder {
-    color: #ec7e7e !important;
-}
-     
-input:-moz-placeholder { /* Firefox 18- */
-    color: #ec7e7e !important;  
-}
-     
-input::-moz-placeholder {  /* Firefox 19+ */
-    color: #ec7e7e !important;  
-}
-     
-input:-ms-input-placeholder {  
-    color: #ec7e7e !important;  
+textarea::placeholder {
+    color: #ec7e7e ;
 }
 
 .button {
