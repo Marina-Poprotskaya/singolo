@@ -389,6 +389,7 @@ body {
     letter-spacing: -0.02em;
     white-space: nowrap;
     overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .about-us__staff p {
@@ -512,6 +513,16 @@ input[type="text"],
 input[type="email"],
 ::placeholder {
     color: #ec7e7e ;
+}
+
+input[type="text"]:nth-child(1):invalid:focus,
+input[type="email"]:invalid:focus {
+    background-color: rgb(236, 73, 73);
+}
+
+input[type="text"]:nth-child(1):valid,
+input[type="email"]:valid {
+    background-color: rgb(134, 202, 134);
 }
 
 textarea::placeholder {
