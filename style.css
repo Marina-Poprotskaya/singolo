@@ -348,6 +348,14 @@ body {
     color: #767e9e;
 }
 
+.column {
+    order: 4;
+}
+
+.column1 {
+    order: 4;
+}
+
 .portfolio__tags,
 .about-us__staff p {
     font-size: 12px;
@@ -360,9 +368,10 @@ body {
 }
 
 .tag_selected {
-    color: #c5c5c5;
-    border: 1px solid #c5c5c5;
+    color: #ffffff;
+    border: 1px solid #ffffff;
 }
+
 .portfolio__tags span {
     display: inline-block;
     padding: 2px 6px;
@@ -371,10 +380,6 @@ body {
     margin-bottom: 19px;
     margin-right: 8px;
     cursor: pointer;
-}
-
-.tag_not-selected:hover {
-    color: #c5c5c5;
 }
 
 .portfolio__tags span:nth-child(3) {
@@ -397,8 +402,13 @@ body {
     overflow: hidden;
 }
 
+.img-border {
+   border: 5px solid #F06C64; 
+}
+
 .portfolio__photo img {
-    padding-bottom: 17px;
+    margin-bottom: 17px;
+    box-sizing: border-box;
 }
 
 .portfolio__works .portfolio__photo {

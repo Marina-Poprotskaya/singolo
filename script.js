@@ -90,3 +90,47 @@ phoneSecond.addEventListener('click', function(event) {
 
 
 
+
+
+// function shuffle(ROW){                                    //СОРТИРОВКА???
+// 	var j, temp;
+// 	for(var i = ROW.length - 1; i > 0; i--){
+// 		j = Math.floor(Math.random()*(i + 1));
+// 		temp = ROW[j];
+// 		ROW[j] = ROW[i];
+// 		ROW[i] = temp;
+// 	}
+// 	return ROW;
+// }
+// console.log(ROW)
+
+
+const TAGS = document.getElementById('tags');
+const PORTFOLIO = document.getElementById('portfolio_wrap');
+let ROW = PORTFOLIO.querySelectorAll('.portfolio__photo');
+let ROW1 = ROW[0]
+
+TAGS.addEventListener('click', function(event){
+    TAGS.classList.remove('tag_selected');
+    ROW1.classList.toggle('column');
+    TAGS.querySelectorAll('span').forEach(elem => {
+        
+        elem.classList.remove('tag_selected');
+        event.target.classList.add('tag_selected');
+
+    });
+});
+
+
+
+
+
+const BORDER = document.querySelectorAll('#border');
+BORDER.forEach(elem => {
+        elem.addEventListener('click', function(event) {
+        
+            // elem.removeClass('img-border')
+            console.log('elem')
+           event.target.classList.toggle('img-border')
+        })
+})
