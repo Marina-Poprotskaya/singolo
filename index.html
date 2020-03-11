@@ -7,31 +7,35 @@
     <link rel="stylesheet" href=style.css>
 </head>
 <body>
-    <header class="header">
+    <header id="home" class="header">
         <div class="container">
             <div class="header-wrapper">
                 <h1 class="header-insert">Singolo<span>*</span></h1>
                 <nav class="header-insert">
-                    <ul>
-                        <li><a href="#">home</a></li>
-                        <li><a href="#">services</a></li>
-                        <li><a href="#">portfolio</a></li>
-                        <li><a href="#">about</a></li>
-                        <li><a href="#">contact</a></li>
+                    <ul id="menu">
+                        <li><a href="#home">home</a></li>
+                        <li><a href="#services">services</a></li>
+                        <li><a href="#portfolio">portfolio</a></li>
+                        <li><a href="#about">about</a></li>
+                        <li><a href="#contact">contact</a></li>
                     </ul>
                 </nav>
             </div>
         </div>
     </header>
     <div class="slider">
-        <img src="assets/images/left.png" alt="#">
-        <img src="assets/images/iphone_ver.png" alt="#">
-        <img src="assets/images/Shadow_v.png" alt="#">
-        <img src="assets/images/iphone_hor.png" alt="#">
-        <img src="assets/images/Shadow_h.png" alt="#">
-        <img src="assets/images/right.png" alt="#">         
+        <div class="arrow"><img src="assets/images/left.png" alt="#">
+            <img src="assets/images/right.png" alt="#">   
+        </div>
+        <div class="slider-phone">
+            <img src="assets/images/iphone_ver.png" alt="#">
+            <img src="assets/images/Shadow_v.png" alt="#">
+            <img src="assets/images/iphone_hor.png" alt="#">
+            <img src="assets/images/Shadow_h.png" alt="#">
+        </div>
+              
     </div>
-    <section class="services">
+    <section id="services" class="services">
         <div class="container">
             <div class="services-wrapper">
                 <h2>Our Services</h2>
@@ -90,7 +94,7 @@
             </div>
         </div>
     </section>
-    <section class = "portfolio">
+    <section id="portfolio" class = "portfolio">
         <div class="container">
             <h2>Portfolio</h2>
             <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
@@ -124,7 +128,7 @@
             </div>
         </div>
     </section>
-    <section class="about-us">
+    <section id="about" class="about-us">
         <div class="container">
             <h2>About Us</h2>
             <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
@@ -165,7 +169,7 @@
             </div>
         </div>
     </section>
-    <section class="contact-us">
+    <section id="contact" class="contact-us">
         <div class="container">
             <h2>Get a Quote</h2>
             <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
@@ -202,5 +206,7 @@
             </div>
         </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>

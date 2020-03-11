@@ -80,6 +80,10 @@ body {
     list-style-type: none;
 }
 
+.active {
+    color: #f06c64 !important;
+}
+
 .header-insert ul li:not(:last-child) a::after {
     position: absolute;
     content: '';
@@ -122,51 +126,53 @@ body {
     box-sizing: border-box;
 }
 
-.slider img:first-child {
+.arrow img:first-child {
     position: absolute;
     top: 280px;
-    left: 43px;
+    left: 42px;
+    z-index: 5;
 }
 
-.slider img:first-child:hover {
+.arrow img:first-child:hover {
     left: 37px;
     cursor: pointer;
 }
 
-.slider img:last-child {
+.arrow img:last-child {
     position: absolute;
     top: 280px;
-    right: 41px;
+    right: 42px;
 }
 
-.slider img:last-child:hover {
+.arrow img:last-child:hover {
     right: 35px;
     cursor: pointer;
 }
 
-.slider img:nth-child(2) {
+.slider-phone img:nth-child(1) {
     position: absolute;
     top: 52px;
     left: 112px;
     border-radius: 24px;
     z-index: 1;
+   
 }
 
-.slider img:nth-child(4) {
+.slider-phone img:nth-child(3) {
     position: absolute;
-    top: 174px;
+    top: 173px;
     right: 137px;
     border-radius: 24px;
     z-index: 1;
 }
 
-.slider img:nth-child(3) {
+.slider-phone img:nth-child(2) {
     position: absolute;
     top: 52px;
-    left: 112px; 
+    left: 112px;
 }
 
-.slider img:nth-child(5) {
+.slider-phone img:nth-child(4) {
     position: absolute;
     top: 174px;
     right: 112px;
