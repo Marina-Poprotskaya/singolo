@@ -82,6 +82,7 @@ body {
 
 .active {
     color: #f06c64 !important;
+    text-decoration: underline !important;
 }
 
 .header-insert ul li:not(:last-child) a::after {
@@ -126,30 +127,43 @@ body {
     box-sizing: border-box;
 }
 
-.arrow img:first-child {
+.left {
+    background: url(assets/images/left.png) center no-repeat;
+    width: 30px;
+    height: 30px;
     position: absolute;
-    top: 280px;
-    left: 42px;
+    top: 278px;
+    left: 34px;
     z-index: 5;
 }
 
-.arrow img:first-child:hover {
-    left: 37px;
+.right {
     cursor: pointer;
 }
 
-.arrow img:last-child {
+.left {
+    cursor: pointer;
+}
+
+.right {
+    background: url(assets/images/right.png) center no-repeat;
+    width: 30px;
+    height: 30px;
     position: absolute;
-    top: 280px;
-    right: 42px;
+    top: 278px;
+    right: 34px;
+    z-index: 5;
 }
 
-.arrow img:last-child:hover {
-    right: 35px;
-    cursor: pointer;
+.slider-phone {
+    opacity: 0;
 }
 
-.slider-phone img:nth-child(1) {
+.active-slider {
+    opacity:1;
+}
+
+.slider-phone.first img:nth-child(1) {
     position: absolute;
     top: 52px;
     left: 112px;
@@ -158,7 +172,7 @@ body {
    
 }
 
-.slider-phone img:nth-child(3) {
+.slider-phone.first img:nth-child(3) {
     position: absolute;
     top: 173px;
     right: 137px;
@@ -166,13 +180,13 @@ body {
     z-index: 1;
 }
 
-.slider-phone img:nth-child(2) {
+.slider-phone.first img:nth-child(2) {
     position: absolute;
     top: 52px;
     left: 112px;
 }
 
-.slider-phone img:nth-child(4) {
+.slider-phone.first img:nth-child(4) {
     position: absolute;
     top: 174px;
     right: 112px;
