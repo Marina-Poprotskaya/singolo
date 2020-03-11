@@ -22,8 +22,6 @@ MENU.addEventListener('click', function(event){
         let ArrowPrev = document.createElement('div');
         ArrowPrev.classList.add('left');
 
-        console.log(ArrowNext, ArrowPrev);
-
         slider.appendChild(ArrowNext);
         slider.appendChild(ArrowPrev);
 
@@ -53,7 +51,6 @@ MENU.addEventListener('click', function(event){
             }
         });
 
-
     };
 
     this.slider = function(selector){
@@ -69,4 +66,27 @@ MENU.addEventListener('click', function(event){
     };
 }());
 slider('#slider');
+
+
+
+
+
+
+const phoneFirst = document.getElementById('phone-first');
+let verScreen = document.getElementById('first')
+
+phoneFirst.addEventListener('click', function(event) {
+    verScreen.classList.toggle('turn-on');
+})
+
+
+const phoneSecond = document.getElementById('phone-second');
+let horScreen = document.getElementById('second')
+
+phoneSecond.addEventListener('click', function(event) {
+    horScreen.classList.toggle('turn-on');
+})
+
+
+
 

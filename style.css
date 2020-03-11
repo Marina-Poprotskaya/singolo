@@ -163,13 +163,33 @@ body {
     opacity:1;
 }
 
+.turn-off-first {
+    display: none;
+    position: absolute;
+    top: 113px;
+    left: 123px;
+    z-index: 1000;
+
+}
+
+.turn-off-second {
+    display: none;
+    position: absolute;
+    top: 183px;
+    right: 198px;
+    z-index: 1000;
+}
+
+.turn-on {
+    display: block;
+}
+
 .slider-phone.first img:nth-child(1) {
     position: absolute;
     top: 52px;
     left: 112px;
     border-radius: 24px;
-    z-index: 1;
-   
+    z-index: 1; 
 }
 
 .slider-phone.first img:nth-child(3) {
