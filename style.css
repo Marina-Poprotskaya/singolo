@@ -34,6 +34,10 @@
     margin: 0;
     padding: 0;
 }
+
+html {
+    scroll-behavior: smooth;
+}
      
 body {
     width: 1020px;
@@ -50,10 +54,14 @@ body {
 }
 
 .header {
+    scroll-margin-top: 2720px;
+    position: sticky;
+    top: 0;
     height: 96px;
     background-color: #2d303a;
     border-bottom: 6px solid #323746;
     box-sizing: border-box;
+    z-index: 1001;
 }
 
 .header-wrapper {
@@ -82,7 +90,6 @@ body {
 
 .active {
     color: #f06c64 !important;
-    text-decoration: underline !important;
 }
 
 .header-insert ul li:not(:last-child) a::after {
@@ -120,6 +127,7 @@ body {
 }
 
 .slider {
+    /* scroll-margin-top: 96px; */
     position: relative;
     height: 600px;
     background-color: #f06c64;
@@ -161,6 +169,7 @@ body {
 
 .active-slider {
     opacity:1;
+    transition: all .9s 
 }
 
 .turn-off-first {
@@ -213,6 +222,7 @@ body {
 }
 
 .services {
+    scroll-margin-top: 96px;
     height: 498px;
     background-color: #f2f2f2;
     border-bottom: 6px solid #ffffff;
@@ -328,6 +338,7 @@ body {
  }
 
  .portfolio {
+    scroll-margin-top: 96px;
     height: 870px;
     box-sizing: border-box;
     background-color: #2d303a;
@@ -352,10 +363,6 @@ body {
     order: 4;
 }
 
-.column1 {
-    order: 4;
-}
-
 .portfolio__tags,
 .about-us__staff p {
     font-size: 12px;
@@ -368,6 +375,11 @@ body {
 }
 
 .tag_selected {
+    color: #ffffff;
+    border: 1px solid #ffffff;
+}
+
+.tag:hover {
     color: #ffffff;
     border: 1px solid #ffffff;
 }
@@ -402,8 +414,10 @@ body {
     overflow: hidden;
 }
 
+
 .img-border {
-   border: 5px solid #F06C64; 
+    outline: 5px solid #F06C64; 
+    outline-offset: -5px;
 }
 
 .portfolio__photo img {
@@ -416,6 +430,7 @@ body {
 }
 
 .about-us {
+    scroll-margin-top: 96px;
     height: 735px;
     background-color: #f2f2f2;
     border-bottom: 6px solid #ffffff;
@@ -495,6 +510,7 @@ body {
 }
 
 .contact-us {
+    scroll-margin-top: 96px;
     height: 654px;
     background-color: #f06c64;
     border-bottom: 6px solid #ea676b;

@@ -1,16 +1,16 @@
-const MENU = document.getElementById('menu');
+const MENU = document.getElementById('menu');                                   // Менюшка
 
-MENU.addEventListener('click', function(event){
-    MENU.querySelectorAll('li > a').forEach(function(elem) {
+MENU.addEventListener('click', function (event) {
+    MENU.querySelectorAll('li > a').forEach(function (elem) {
         elem.classList.remove('active')
         event.target.classList.add('active')
     });
 });
 
 
-(function() {
+(function () {                                                                   // Слайдер
 
-    const sliderInIt = function(slider) {
+    const sliderInIt = function (slider) {
 
         let sliders = slider.querySelectorAll('div.slider-phone');
 
@@ -25,26 +25,26 @@ MENU.addEventListener('click', function(event){
         slider.appendChild(ArrowNext);
         slider.appendChild(ArrowPrev);
 
-        ArrowNext.addEventListener('click', function(){
+        ArrowNext.addEventListener('click', function () {
             let activeElem = slider.querySelector('div.active-slider');
 
-            if(activeElem !=null) {
+            if (activeElem != null) {
                 activeElem.classList.remove('active-slider');
                 let nextElem = activeElem.nextElementSibling.classList.add('active-slider');
-                if(nextElem == null) {
+                if (nextElem == null) {
                     activeElem.classList.remove('active-slider');
                     activeElem.previousElementSibling.classList.add('active-slider');
                 }
             }
         });
 
-        ArrowPrev.addEventListener('click', function(){
+        ArrowPrev.addEventListener('click', function () {
             let activeElem = slider.querySelector('div.active-slider');
 
-            if(activeElem !=null) {
+            if (activeElem != null) {
                 activeElem.classList.remove('active-slider');
                 let nextElem = activeElem.nextElementSibling.classList.add('active-slider');
-                if(nextElem == null) {
+                if (nextElem == null) {
                     activeElem.classList.remove('active-slider');
                     activeElem.previousElementSibling.classList.add('active-slider');
                 }
@@ -53,16 +53,16 @@ MENU.addEventListener('click', function(event){
 
     };
 
-    this.slider = function(selector){
-        
+    this.slider = function (selector) {
+
         let slider = document.querySelector(selector);
 
         if (!slider) {
-            console.log ('Slider not found');
+            console.log('Slider not found');
             return false;
         }
 
-        sliderInIt(slider); 
+        sliderInIt(slider);
     };
 }());
 slider('#slider');
@@ -72,18 +72,17 @@ slider('#slider');
 
 
 
-const phoneFirst = document.getElementById('phone-first');
+const phoneFirst = document.getElementById('phone-first');                    //Выключение экрана
 let verScreen = document.getElementById('first')
 
-phoneFirst.addEventListener('click', function(event) {
+phoneFirst.addEventListener('click', function (event) {
     verScreen.classList.toggle('turn-on');
 })
-
 
 const phoneSecond = document.getElementById('phone-second');
 let horScreen = document.getElementById('second')
 
-phoneSecond.addEventListener('click', function(event) {
+phoneSecond.addEventListener('click', function (event) {
     horScreen.classList.toggle('turn-on');
 })
 
@@ -91,46 +90,57 @@ phoneSecond.addEventListener('click', function(event) {
 
 
 
-
-// function shuffle(ROW){                                    //СОРТИРОВКА???
-// 	var j, temp;
-// 	for(var i = ROW.length - 1; i > 0; i--){
-// 		j = Math.floor(Math.random()*(i + 1));
-// 		temp = ROW[j];
-// 		ROW[j] = ROW[i];
-// 		ROW[i] = temp;
-// 	}
-// 	return ROW;
-// }
-// console.log(ROW)
-
-
-const TAGS = document.getElementById('tags');
+const TAGS = document.getElementById('tags');                                     // Блок с портфолио
 const PORTFOLIO = document.getElementById('portfolio_wrap');
 let ROW = PORTFOLIO.querySelectorAll('.portfolio__photo');
-let ROW1 = ROW[0]
 
-TAGS.addEventListener('click', function(event){
-    TAGS.classList.remove('tag_selected');
-    ROW1.classList.toggle('column');
+TAGS.addEventListener('click', function (event) {
+    let target = event.target;
+    if (target.tagName != "SPAN") return;
+
     TAGS.querySelectorAll('span').forEach(elem => {
-        
-        elem.classList.remove('tag_selected');
-        event.target.classList.add('tag_selected');
 
+        elem.classList.remove('tag_selected');
+        target.classList.add('tag_selected');
+
+        let arr = [0, 1, 2, 3];
+        let arrRandom = [];
+        for (let i = 0; i < arr.length; i++) {
+            let numRandom = Math.ceil(Math.random() * arr.length - 1);
+            arrRandom.push(arr.splice(numRandom, 1));
+        }
+        let i = 0;
+        ROW.forEach(element => {  
+            element.style.order = arrRandom[i];
+            i++;
+        })
     });
 });
 
 
 
 
+// const BORDER = document.querySelectorAll('#border');                             //Бордер на картинках
 
-const BORDER = document.querySelectorAll('#border');
-BORDER.forEach(elem => {
-        elem.addEventListener('click', function(event) {
-        
-            // elem.removeClass('img-border')
-            console.log('elem')
-           event.target.classList.toggle('img-border')
-        })
+// BORDER.forEach(elem => {
+    // elem.addEventListener('click', function (event) {                             //Первое решение
+//         let target = event.target;
+//         if (target.tagName != "IMG") return;
+//         elem.classList.remove('img-border')
+//         console.log('elem')
+//         target.classList.toggle('img-border')
+
+//     })
+// })
+
+
+
+
+
+document.querySelectorAll('#border > img').forEach(elem => {                    //второе решение---работает так же как и первое)
+    elem.classList.remove('img-border');
+    elem.addEventListener('click', event => {
+        event.target.classList.toggle('img-border');
+    })
 })
+
