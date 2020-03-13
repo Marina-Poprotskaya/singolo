@@ -31,7 +31,7 @@ MENU.addEventListener('click', function (event) {
             if (activeElem != null) {
                 activeElem.classList.remove('active-slider');
                 let nextElem = activeElem.nextElementSibling.classList.add('active-slider');
-                if (nextElem == null) {
+                if (!nextElem) {
                     activeElem.classList.remove('active-slider');
                     activeElem.previousElementSibling.classList.add('active-slider');
                 }
@@ -44,7 +44,7 @@ MENU.addEventListener('click', function (event) {
             if (activeElem != null) {
                 activeElem.classList.remove('active-slider');
                 let nextElem = activeElem.nextElementSibling.classList.add('active-slider');
-                if (nextElem == null) {
+                if (!nextElem) {
                     activeElem.classList.remove('active-slider');
                     activeElem.previousElementSibling.classList.add('active-slider');
                 }
@@ -120,27 +120,22 @@ TAGS.addEventListener('click', function (event) {
 
 
 
-// const BORDER = document.querySelectorAll('#border');                             //Бордер на картинках
 
-// BORDER.forEach(elem => {
-    // elem.addEventListener('click', function (event) {                             //Первое решение
-//         let target = event.target;
-//         if (target.tagName != "IMG") return;
-//         elem.classList.remove('img-border')
-//         console.log('elem')
-//         target.classList.toggle('img-border')
+let selectedImg;                                                                  //Бордер на картинках
+PORTFOLIO.addEventListener('click', function(event) {
+    let target = event.target;
+    if (target.tagName != "IMG") return;
+    getBorder(target);
+});
 
-//     })
-// })
+function getBorder(img) {
+if (selectedImg) {
+    selectedImg.classList.remove('img-border')
+}
+selectedImg = img;
+    selectedImg.classList.add('img-border')
+
+}
 
 
-
-
-
-document.querySelectorAll('#border > img').forEach(elem => {                    //второе решение---работает так же как и первое)
-    elem.classList.remove('img-border');
-    elem.addEventListener('click', event => {
-        event.target.classList.toggle('img-border');
-    })
-})
 
