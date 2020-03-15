@@ -8,6 +8,8 @@ MENU.addEventListener('click', function (event) {
 });
 
 
+
+
 (function () {                                                                   // Слайдер
 
     const sliderInIt = function (slider) {
@@ -79,14 +81,17 @@ slider('#slider');
 
 
 
-
-
 const phoneFirst = document.getElementById('phone-first');                    //Выключение экрана
 let verScreen = document.getElementById('first')
 
 phoneFirst.addEventListener('click', function (event) {
     verScreen.classList.toggle('turn-on');
 })
+
+verScreen.addEventListener('click', function (event) {
+    verScreen.classList.remove('turn-on');
+});
+
 
 const phoneSecond = document.getElementById('phone-second');
 let horScreen = document.getElementById('second')
@@ -95,6 +100,9 @@ phoneSecond.addEventListener('click', function (event) {
     horScreen.classList.toggle('turn-on');
 })
 
+horScreen.addEventListener('click', function (event) {
+    horScreen.classList.remove('turn-on');
+});
 
 
 
@@ -147,6 +155,7 @@ function getBorder(img) {
 
 
 
+
 const button = document.getElementById('btn');                                      //pop-up окошко
 const close_button = document.getElementById('close-btn');
 const form = document.getElementById('form');
@@ -164,7 +173,6 @@ form.addEventListener('submit', function(event) {
     } else document.getElementById('result').innerHTML = 'Письмо отправлено <br/> Без темы <br/> Без описания';
     document.getElementById('pop-up_form').classList.remove('hidden');
 });
-
 
     close_button.addEventListener('click', function () {
     form.reset();
