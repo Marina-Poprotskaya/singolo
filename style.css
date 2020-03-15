@@ -509,6 +509,54 @@ body {
     background: url(assets/images/linkedin.png) center no-repeat;
 }
 
+.form {
+    position: relative;
+}
+
+.hidden {
+    display: none;
+}
+
+#pop-up_form {
+    position: absolute;
+    width: 1020px;
+    height: 700px;
+    background-color: #00000050;
+    /* opacity: 0.8; */
+    left: 165px; 
+    top: 2800px;
+     
+}
+
+#message {
+    position: absolute;
+    top: 300px;
+    left: 200px;
+    padding-top: 40px;
+    width: 600px;
+    height: 200px;
+    background-color: rgb(80, 78, 78);
+    color: #fff;
+    border-radius: 4px;
+}
+
+#close-btn {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(49, 48, 48);
+    color: #fff;
+}
+
+#message p {
+    text-align: center;
+    font-size: 24px;
+}
+
 .contact-us {
     scroll-margin-top: 96px;
     height: 654px;

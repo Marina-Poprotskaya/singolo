@@ -106,7 +106,7 @@
                 <span class="tag tag_not-selected">Graphic Design</span>
                 <span class="tag tag_not-selected">Artwork</span>
             </div>
-            <div class="portfolio__works" id="portfolio_wrap">
+            <div class="portfolio__works" id="portfolio_wrap">  
                 <div class="portfolio__photo" id="border">
                     <img src="assets/images/top_1.png" alt="#">
                     <img src="assets/images/middle_1.png" alt="#">
@@ -177,13 +177,13 @@
             <h2>Get a Quote</h2>
             <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
             <div class="contact-us__information">
-                <form class="contact-us__field" action="URL" method="post">
+                <form id="form" class="contact-us__field" method="GET" action="#">
                     <input type="text" name="name" required placeholder="Name(Required)">
                     <input type="email" name="email" required placeholder="Email(Required)">
-                    <input type="text" name="subject" placeholder="Subject">
-                    <textarea name="message" placeholder="Describe your project in detail..."></textarea> 
-                    <button class="button">Submit</button> 
-                </form>
+                    <input id="subject" type="text" name="subject" placeholder="Subject">
+                    <textarea id="textarea_message" name="message" placeholder="Describe your project in detail..."></textarea> 
+                    <button id="btn" class="button">Submit</button> 
+                </form>               
                 <div class="contact-us__field">
                     <h3>Contact information</h3>
                     <p>Quisque hendrerit purus dapibus, ornare nibh vitae, viver-<wbr>ra nibh. Fusce vitae aliquam tellus. Proin sit amet volutpat libero. Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis. </p>
@@ -195,6 +195,13 @@
                 </div>
             </div>
         </div>
+        <div id= "pop-up_form" class="hidden">
+            <div id="message">
+                <p id="result">Текст</p>
+                <br/>
+                <button id="close-btn">OK</button>
+            </div>
+        </div> 
     </section>
     <footer class="footer">
         <div class="container">

@@ -27,30 +27,39 @@ MENU.addEventListener('click', function (event) {
 
         ArrowNext.addEventListener('click', function () {
             let activeElem = slider.querySelector('div.active-slider');
+            let nextElem = activeElem.nextElementSibling;
 
             if (activeElem != null) {
-                activeElem.classList.remove('active-slider');
-                let nextElem = activeElem.nextElementSibling.classList.add('active-slider');
-                if (!nextElem) {
+                if (nextElem.classList.contains('slider-phone')) {
                     activeElem.classList.remove('active-slider');
-                    activeElem.previousElementSibling.classList.add('active-slider');
+                    nextElem.classList.add('active-slider');
+                }
+                else {
+                    activeElem.classList.remove('active-slider');
+                    sliders[0].classList.add('active-slider');
                 }
             }
         });
 
         ArrowPrev.addEventListener('click', function () {
             let activeElem = slider.querySelector('div.active-slider');
-
-            if (activeElem != null) {
-                activeElem.classList.remove('active-slider');
-                let nextElem = activeElem.nextElementSibling.classList.add('active-slider');
-                if (!nextElem) {
+            let prevElem = activeElem.previousElementSibling;          
+            if (activeElem != null) {  
+                if (!prevElem) {
                     activeElem.classList.remove('active-slider');
-                    activeElem.previousElementSibling.classList.add('active-slider');
-                }
+                    sliders[sliders.length-1].classList.add('active-slider');
+                }         
+                else if (prevElem.classList.contains('slider-phone')) {
+              
+                 activeElem.classList.remove('active-slider');
+                 prevElem.classList.add('active-slider');
+             }
+             else {
+                 activeElem.classList.remove('active-slider');
+                 sliders[sliders.length-1].classList.add('active-slider');
+             }
             }
         });
-
     };
 
     this.slider = function (selector) {
@@ -105,12 +114,12 @@ TAGS.addEventListener('click', function (event) {
 
         let arr = [0, 1, 2, 3];
         let arrRandom = [];
-        for (let i = 0; i < arr.length; i++) {
+        for (let i = 0; i < arr.length; i + 2) {
             let numRandom = Math.ceil(Math.random() * arr.length - 1);
             arrRandom.push(arr.splice(numRandom, 1));
         }
         let i = 0;
-        ROW.forEach(element => {  
+        ROW.forEach(element => {
             element.style.order = arrRandom[i];
             i++;
         })
@@ -122,20 +131,50 @@ TAGS.addEventListener('click', function (event) {
 
 
 let selectedImg;                                                                  //Бордер на картинках
-PORTFOLIO.addEventListener('click', function(event) {
+PORTFOLIO.addEventListener('click', function (event) {
     let target = event.target;
     if (target.tagName != "IMG") return;
     getBorder(target);
 });
 
 function getBorder(img) {
-if (selectedImg) {
-    selectedImg.classList.remove('img-border')
-}
-selectedImg = img;
+    if (selectedImg) {
+        selectedImg.classList.remove('img-border')
+    }
+    selectedImg = img;
     selectedImg.classList.add('img-border')
-
 }
+
+
+
+const button = document.getElementById('btn');                                      //pop-up окошко
+const close_button = document.getElementById('close-btn');
+const form = document.getElementById('form');
+
+form.addEventListener('submit', function(event) {
+    event.preventDefault();
+    const subject = document.getElementById('subject').value.toString().toLowerCase();
+    const textarea = document.getElementById('textarea_message').value.toString().toLowerCase();
+    if (subject=='singolo' && textarea== 'portfolio project') {
+    document.getElementById('result').innerHTML = 'Письмо отправлено <br/> Тема: Singolo <br/> Описание: Portfolio project';
+    } else if (subject =='singolo') {
+    document.getElementById('result').innerHTML = 'Письмо отправлено <br/> Тема: Singolo <br/>  Без описания';
+    } else if (textarea == 'portfolio project') {
+    document.getElementById('result').innerHTML = 'Письмо отправлено <br/> Без темы <br/> Описание: Portfolio project';
+    } else document.getElementById('result').innerHTML = 'Письмо отправлено <br/> Без темы <br/> Без описания';
+    document.getElementById('pop-up_form').classList.remove('hidden');
+});
+
+
+    close_button.addEventListener('click', function () {
+    form.reset();
+    console.log(result);
+    document.getElementById('pop-up_form').classList.add('hidden')
+    });
+
+
+
+
 
 
 
