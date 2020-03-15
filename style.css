@@ -167,6 +167,13 @@ body {
     opacity: 0;
 }
 
+#phone-second:hover,
+#phone-first:hover,
+#first:hover, 
+#second:hover{
+    cursor: pointer;
+}
+
 .active-slider {
     opacity:1;
     transition: all .9s 
@@ -423,6 +430,10 @@ body {
 .portfolio__photo img {
     margin-bottom: 17px;
     box-sizing: border-box;
+}
+
+.portfolio__photo img:hover {
+    cursor: pointer;
 }
 
 .portfolio__works .portfolio__photo {
