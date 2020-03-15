@@ -160,20 +160,6 @@ const button = document.getElementById('btn');                                  
 const close_button = document.getElementById('close-btn');
 const form = document.getElementById('form');
 
-// form.addEventListener('submit', function(event) {
-//     event.preventDefault();
-//     const subject = document.getElementById('subject').value.toString().toLowerCase();
-//     const textarea = document.getElementById('textarea_message').value.toString().toLowerCase();
-//     if (subject=='singolo' && textarea== 'portfolio project') {
-//     document.getElementById('result').innerHTML = 'Письмо отправлено <br/> Тема: Singolo <br/> Описание: Portfolio project';
-//     } else if (subject =='singolo') {
-//     document.getElementById('result').innerHTML = 'Письмо отправлено <br/> Тема: Singolo <br/>  Без описания';
-//     } else if (textarea == 'portfolio project') {
-//     document.getElementById('result').innerHTML = 'Письмо отправлено <br/> Без темы <br/> Описание: Portfolio project';
-//     } else document.getElementById('result').innerHTML = 'Письмо отправлено <br/> Без темы <br/> Без описания';
-//     document.getElementById('pop-up_form').classList.remove('hidden');
-// });
-
 
 form.addEventListener('submit', function(event) {
     event.preventDefault();
