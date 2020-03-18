@@ -127,7 +127,6 @@ body {
 }
 
 .slider {
-    /* scroll-margin-top: 96px; */
     position: relative;
     height: 600px;
     background-color: #f06c64;
