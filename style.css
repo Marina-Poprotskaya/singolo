@@ -54,7 +54,6 @@ body {
 }
 
 .header {
-    scroll-margin-top: 2720px;
     position: sticky;
     top: 0;
     height: 96px;
@@ -127,6 +126,7 @@ body {
 }
 
 .slider {
+    scroll-margin-top: 96px;
     position: relative;
     height: 600px;
     background-color: #f06c64;
@@ -528,13 +528,11 @@ body {
 }
 
 #pop-up_form {
-    position: absolute;
+    position: relative;
     width: 1020px;
-    height: 700px;
+    height: 654px;
     background-color: #00000050;
-    /* opacity: 0.8; */
-    left: 165px; 
-    top: 2800px;
+    top: -100%;
      
 }
 
