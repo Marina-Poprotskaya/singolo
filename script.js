@@ -127,30 +127,32 @@ horScreen.addEventListener('click', function (event) {
 
 
 
-const TAGS = document.getElementById('tags');                                     // Блок с портфолио
+
+
+const TAGS = document.getElementById('tags');                                      // Блок с портфолио
 const PORTFOLIO = document.getElementById('portfolio_wrap');
 let ROW = PORTFOLIO.querySelectorAll('.portfolio__photo');
+
 
 TAGS.addEventListener('click', function (event) {
     let target = event.target;
     if (target.tagName != "SPAN") return;
 
+
     TAGS.querySelectorAll('span').forEach(elem => {
 
         elem.classList.remove('tag_selected');
+    })
         target.classList.add('tag_selected');
 
-        let arr = [0, 1, 2, 3];
-        let arrRandom = [];
-        for (let i = 0; i < arr.length; i + 2) {
-            let numRandom = Math.ceil(Math.random() * arr.length - 1);
-            arrRandom.push(arr.splice(numRandom, 1));
-        }
-        let i = 0;
-        ROW.forEach(element => {
-            element.style.order = arrRandom[i];
-            i++;
-        })
+
+        ROW.forEach(elem => {
+            let arrImg = Array.from(elem.querySelectorAll('img'));
+            arrImg.sort(() => Math.random() - 0.5);
+            elem.innerHTML='';
+            arrImg.forEach(el => {
+            elem.appendChild(el);       
+        }) 
     });
 });
 
