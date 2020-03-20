@@ -22,13 +22,11 @@ function onScroll() {
                 a.classList.remove('active');
                 if (a.getAttribute('href').substring(1) === elem.getAttribute('id')) {
                     a.classList.add('active');
-                }
+                }             
             });
         };
     });
 };
-
-
 
 
 
