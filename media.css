@@ -291,6 +291,10 @@
 
 
 @media (max-width: 375px) {
+    body {
+         width: 375px;
+    }
+
     .container {
         width: 315px;
     }
@@ -301,11 +305,57 @@
     }
 
     .slider {
-        display: none;
+        height: 220px;
+    }
+
+    #phone-first {
+        box-shadow: 10px 10px #ce5d56;
+        border-radius: 12px;
+        top: 19px;
+        left: 50px;
+    }
+
+    #phone-second {
+        box-shadow: 10px 10px #ce5d56;
+        border-radius: 12px;
+        top: 68px;
+        right: 59px;
+    }
+
+    .turn-off-first {
+        top: 42px;
+        left: 54px;
+    }
+
+    .turn-off-second {
+        top: 72px;
+        right: 82px;
+    }
+
+    .left {
+        top: 96px;
+        left: 13px;
+    }
+
+    .right {
+        top: 96px;
+        right: 13px;
     }
 
     .services-insert {
         flex-direction: column;
+    }
+
+    .services-insert-tb {
+        width: 100%;
+    }
+
+    .services-insert-tb {
+        margin-bottom: 44px;
+    }
+
+    .services-insert-horizontal:first-child {
+         padding-bottom: 0;
     }
 
     .portfolio__works .portfolio__photo img:nth-child(3) {
@@ -316,12 +366,29 @@
         width: 150px;
     }
 
+    .portfolio__photo img:not(:last-child) {
+        margin-right: 14px;
+    }
+
     .about-us__staff-wrapper {
         flex-direction: column;
     }
 
     .about-us__staff img {
         width: 313px;
+    }
+
+    .about-us__staff {
+        width: 100%;
+    }
+
+    .icons-wrapper {
+        padding-top: 18px;
+        padding-bottom: 33px;
+    }
+
+    .about-us__staff-wrapper {
+        margin-bottom: 11px;
     }
 
     #menu {
