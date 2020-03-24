@@ -1,0 +1,290 @@
+@media (max-width: 980px) {
+
+    body {
+        width: 100%;
+    }
+
+    .container {
+        width: 85%;
+    }
+
+     .slider {
+        height: auto;
+    }
+
+    #phone-first {
+        width: 21%;
+        box-shadow: 20px 20px #ce5d56;
+    }
+    #phone-second {
+        width: 45%;
+        box-shadow: 20px 20px #ce5d56;
+    }
+
+    #shadow-first {
+        display: none;
+    }
+
+    #shadow-second {
+        display: none;
+    }
+
+    .left {
+        top: 240px;
+        left: 6%;
+    }
+
+    .right {
+        top: 240px;
+        right: 6%;
+    }
+
+    .turn-off-first {
+        width: 19%;
+        top: 107px;
+        left: 122px;
+    }
+
+    .turn-off-second {
+        width: 33%;
+        top: 185px;
+        right: 196px;
+    }
+
+    .slider-phone.second img{
+        width: 100%;
+    }
+
+    .services {
+        height: auto;
+    }
+
+    .services-insert {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .services-insert-horizontal {
+        flex-direction: column;
+        justify-content: start;
+    }
+    
+
+    .services-insert-tb {
+        margin-bottom: 56px;
+    }
+
+    .portfolio {
+        height: auto;
+        
+    }
+
+    .portfolio__works {
+        flex-direction: column;
+        height: auto;
+        margin-bottom: 52px;
+ 
+    }
+
+
+    .portfolio__works .portfolio__photo {
+        display: flex;
+        width: 100%; 
+    }
+
+    .portfolio__photo img {
+        width: 100%;  
+        margin-bottom: 20px;
+    }
+
+    .portfolio__photo img:not(:last-child) {
+        margin-right: 20px;
+    }
+
+    .about-us {
+        height: auto;
+    }
+
+    .about-us__staff {
+        width: 30%;
+    }
+
+    .about-us__staff-wrapper {
+        margin-bottom: 75px;
+    }
+
+    .about-us__staff img{
+        width: 100%;
+    }
+
+    #form.contact-us__field {
+        width: 60%;
+        margin-bottom: 45px;
+    }
+
+    .contact-us__field:nth-child(2) {
+        width: 35%;
+    }
+
+    .contact-us {
+        height: 631px;
+    }
+
+    #pop-up_form {
+        width: 100%;
+        height: 100%;
+    }
+
+    #message {
+        width: 50%;
+    }
+
+    form.contact-us__field textarea {
+        height: 135px;
+    }
+  
+}
+
+
+@media (max-width: 930px) {
+
+    .turn-off-second {
+        top: 183px;
+        right: 195px;
+    }
+}
+
+@media (max-width: 900px) {
+
+    .turn-off-second {
+        right: 192px;
+    }
+}
+
+@media (max-width: 860px) {
+
+    .slider-phone.first img:nth-child(3) {
+        right: 115px;
+    }
+
+    .turn-off-first {
+        top: 104px;
+        left: 122px;
+    }
+
+    .turn-off-second {
+        top: 183px;
+        right: 168px;
+    }
+}
+
+@media (max-width: 840px) {
+
+    .turn-off-first {
+        top: 104px;
+        left: 120px;
+    }
+
+    .turn-off-second {
+        top: 183px;
+        right: 167px;
+    }
+
+    .portfolio__photo img {
+        width: 31%;
+}
+
+
+
+@media (max-width: 810px) {
+
+    .turn-off-first {
+        top: 100px;
+        left: 120px;
+    }
+
+    .turn-off-second {
+        top: 183px;
+        right: 165px;
+    }
+}
+
+@media (max-width: 780px) {
+
+    .turn-off-first {
+        top: 100px;
+        left: 120px;
+    }
+
+    .turn-off-second {
+        top: 182px;
+        right: 164px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    body {
+        width: 768px;
+    }
+
+    .container {
+        width: 90%;
+    }
+
+    .slider {
+        height: 452px;
+    }
+
+    #phone-first {
+        width: 21%;
+        top: 40px;
+        left: 84px;
+    }
+    #phone-second {
+        width: 45%;
+        top: 131px;
+        right: 101px;
+    }
+
+    .turn-off-first {
+        width: 19%;
+        top: 87px;
+        left: 91px;
+    }
+
+    .turn-off-second {
+        width: 33%;
+        top: 140px;
+        right: 150px;
+    }
+
+    .left {
+        top: 213px;
+        left: 29px;
+    }
+
+    .right {
+        top: 213px;
+        right: 29px;
+    }
+
+    .services-insert-tb {
+        margin-bottom: 56px;
+    }
+
+    .portfolio__photo img {
+        width: 216px;
+        margin-bottom: 20px;
+        margin-right: 20px;
+    }
+
+    .about-us__staff {
+        width: 220px;
+    }
+
+    .about-us__staff img{
+        width: 220px;
+    }
+
+}
