@@ -572,7 +572,7 @@ body {
 
 .contact-us {
     scroll-margin-top: 96px;
-    height: 654px;
+    height: 680px;;
     background-color: #f06c64;
     border-bottom: 6px solid #ea676b;
     box-sizing: border-box;
@@ -659,12 +659,17 @@ textarea::placeholder {
 .button {
     height: 40px;
     border-radius: 7px;
-    background-color: #d6564f;
-    color: #ec7e7e;
+    background-color: #FBC65F;
+    color: #886A30;
     border: none;
     width: 30%;
     font-size: 12px;
     cursor: pointer;
+}
+
+.button:hover {
+    background-color: rgb(245, 187, 70);
+    transition: ease-in-out .3s;
 }
 
 .our-contacts {

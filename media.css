@@ -16,6 +16,7 @@
         width: 21%;
         box-shadow: 20px 20px #ce5d56;
     }
+
     #phone-second {
         width: 45%;
         box-shadow: 20px 20px #ce5d56;
@@ -83,7 +84,6 @@
         flex-direction: column;
         height: auto;
         margin-bottom: 52px;
- 
     }
 
 
@@ -194,7 +194,7 @@
         width: 31%;
 }
 
-
+}
 
 @media (max-width: 810px) {
 
@@ -287,4 +287,74 @@
         width: 220px;
     }
 
+}
+
+
+@media (max-width: 375px) {
+    .container {
+        width: 315px;
+    }
+
+    .header-wrapper h1 {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .slider {
+        display: none;
+    }
+
+    .services-insert {
+        flex-direction: column;
+    }
+
+    .portfolio__works .portfolio__photo img:nth-child(3) {
+        display: none;
+    }
+
+    .portfolio__photo img {
+        width: 150px;
+    }
+
+    .about-us__staff-wrapper {
+        flex-direction: column;
+    }
+
+    .about-us__staff img {
+        width: 313px;
+    }
+
+    #menu {
+        display: none;
+        }
+
+    .button {
+        width: 100%;
+            }
+            
+    .contact-us {
+        height: 967px;
+            }
+
+    .contact-us__information {
+        flex-direction: column;
+        }
+
+    #form.contact-us__field {
+        width: 100%;
+    }
+
+    .contact-us__field:nth-child(2) {
+        width: 100%;
+        }
+
+    .footer span {
+        display: none;
+    } 
+
+    .icons-wrapper-f {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
 }
