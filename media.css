@@ -339,21 +339,38 @@
         box-shadow: none;
         border: none;
         cursor: pointer;
-        z-index: 10;
         background-color: transparent;
     }
 
-    button:hover {
-    transform: rotate(90deg);
-}
+    .nav-close {
+        position: absolute;
+        top: 26px;
+        left: 12px; 
+        overflow: hidden;
+        margin: 0;
+        padding: 0;
+        width: 25px;
+        height: 20px;
+        box-shadow: none;
+        border: none;
+        cursor: pointer;
+        z-index: 10;
+        background-color: transparent;
+        color: #fff;
+    }
 
     .hamburger {
+        margin-bottom: 4px;
+    }
+
+    .hamburger,
+    .hamburger::before,
+    .hamburger::after {
         display: inline-block;
         width: 100%;
         height: 2px;
         border-radius: 1.2px;
         background-color: #ffffff;
-        margin-bottom: 4px;
     }
         
     .hamburger::before {
@@ -361,11 +378,6 @@
         position: absolute;
         top: 0;
         left: 0;
-        display: inline-block;
-        width: 100%;
-        height: 2px;
-        border-radius: 1.2px;
-        background-color: #ffffff;
     }
 
     .hamburger::after {
@@ -373,11 +385,10 @@
         position: absolute;
         bottom: 0;
         left: 0;
-        display: inline-block;
-        width: 100%;
-        height: 2px;
-        border-radius: 1.2px;
-        background-color: #ffffff;
+    }
+
+    .hamburger-close {
+        transform: rotate(90deg);
     }
 
     .shadow {
@@ -430,21 +441,25 @@
         display: none;
     }
    
-    input#nav-toggle {
+    input#nav-toggle,
+    input#nav-close {
         display: none;
         }
+
 
     .nav-toggle {
         display: block;
     }
 
-    input#nav-toggle:checked ~ #menu {
+    input#nav-toggle:checked ~ #menu,
+    input#nav-toggle:checked ~ .nav-close {
         display: block;
     }
 
     input#nav-toggle:checked ~ #span-menu {
         display: block;
     }
+
 
     .services-insert {
         flex-direction: column;

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href=style.css>
     <link rel="stylesheet" href=media.css>
 </head>
+
 <body>
     <header id="home" class="header">
         <div class="container">
@@ -14,7 +16,11 @@
                 <h1 class="header-insert">Singolo<span>*</span></h1>
                 <nav class="header-insert">
                     <input type="checkbox" id="nav-toggle">
+                    <input type="checkbox" id="nav-close">
                     <button class="nav-toggle"><label for="nav-toggle">
+                            <span class="hamburger"></span>
+                        </label></button>
+                    <button class="nav-close hamburger-close"><label for="nav-toggle">
                             <span class="hamburger"></span>
                         </label></button>
                     <span id="span-menu">Singolo<span>*</span></span>
@@ -31,26 +37,28 @@
                 </nav>
             </div>
         </div>
-        </header>
+    </header>
     <div class="slider scroll" id="slider">
         <div class="slider-phone first">
             <img id="phone-first" src="assets/images/iphone_ver.png" alt="#">
             <img id="shadow-first" src="assets/images/Shadow_v.png" alt="#">
             <img id="phone-second" src="assets/images/iphone_hor.png" alt="#">
             <img id="shadow-second" src="assets/images/Shadow_h.png" alt="#">
-            <img class = "turn-off-first" id="first" src="assets/images/Screen-first.png" alt="#">
-            <img class = "turn-off-second" id="second" src="assets/images/Screen-second.png" alt="#">
+            <img class="turn-off-first" id="first" src="assets/images/Screen-first.png" alt="#">
+            <img class="turn-off-second" id="second" src="assets/images/Screen-second.png" alt="#">
         </div>
         <div class="slider-phone second">
             <img src="assets/images/Slider.png" alt="#">
         </div>
-              
+
     </div>
     <section id="services" class="services scroll">
         <div class="container">
             <div class="services-wrapper">
                 <h2>Our Services</h2>
-                <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+                <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus,
+                    nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo,
+                    tortor mauris condimentum nibh.</p>
             </div>
             <div class="services-wrapper">
                 <div class="services-insert">
@@ -59,21 +67,24 @@
                             <div class="insert-left pen"></div>
                             <div class="insert-right">
                                 <h3>Custom Design</h3>
-                                <p>Curabitur vestibulum eget mauris quis laoreet. Phasellus in quam laoreet, viverra lacus ut, ultrices velit.</p>
+                                <p>Curabitur vestibulum eget mauris quis laoreet. Phasellus in quam laoreet, viverra
+                                    lacus ut, ultrices velit.</p>
                             </div>
                         </div>
                         <div class="services-insert-tb second-top">
                             <div class="insert-left bulb"></div>
                             <div class="insert-right">
                                 <h3>Inovative Ideas</h3>
-                                <p>Quisque luctus, quam eget molestie com-<wbr>modo, lacus purus cursus purus, nec rutrum tellus dolor id lorem.</p>
+                                <p>Quisque luctus, quam eget molestie
+                                    com-<wbr>modo, lacus purus cursus purus, nec rutrum tellus dolor id lorem.</p>
                             </div>
                         </div>
                         <div class="services-insert-tb third-top">
                             <div class="insert-left heart"></div>
                             <div class="insert-right">
                                 <h3>Love Is The Answer</h3>
-                                <p>Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis. Quisque condimentum.</p>
+                                <p>Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat
+                                    felis. Quisque condimentum.</p>
                             </div>
                         </div>
                     </div>
@@ -82,21 +93,24 @@
                             <div class="insert-left phone"></div>
                             <div class="insert-right">
                                 <h3>Responsive Layout</h3>
-                                <p>Sed porttitor placerat rhoncus. In at nunc tellus. Maecenas blandit nunc ligula. Prae-<wbr>sent elit leo.</p>
+                                <p>Sed porttitor placerat rhoncus. In at nunc tellus. Maecenas blandit nunc ligula.
+                                    Prae-<wbr>sent elit leo.</p>
                             </div>
                         </div>
                         <div class="services-insert-tb second-bottom">
                             <div class="insert-left bubble"></div>
                             <div class="insert-right">
                                 <h3>24 / 7 Support</h3>
-                                <p>Vivamus vel quam lacinia, tincidunt dui non, vehicula nisi. Nulla a sem erat. Pellen-<wbr>tesque egestas venenatis lorem .</p>
+                                <p>Vivamus vel quam lacinia, tincidunt dui non, vehicula nisi. Nulla a sem erat.
+                                    Pellen-<wbr>tesque egestas venenatis lorem .</p>
                             </div>
                         </div>
                         <div class="services-insert-tb third-bottom">
                             <div class="insert-left star"></div>
                             <div class="insert-right">
                                 <h3>Feel Like A Star</h3>
-                                <p>Quisque hendrerit purus dapibus, ornare nibh vitae, viverra nibh. Fusce vitae aliquam tellus.</p>
+                                <p>Quisque hendrerit purus dapibus, ornare nibh vitae, viverra nibh. Fusce vitae aliquam
+                                    tellus.</p>
                             </div>
                         </div>
                     </div>
@@ -105,17 +119,17 @@
             </div>
         </div>
     </section>
-    <section id="portfolio" class = "portfolio scroll">
+    <section id="portfolio" class="portfolio scroll">
         <div class="container">
             <h2>Portfolio</h2>
             <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
             <div class="portfolio__tags" id="tags">
-                <span class="tag tag_not-selected">All</span>            
+                <span class="tag tag_not-selected">All</span>
                 <span class="tag tag_not-selected">Web Design</span>
                 <span class="tag tag_not-selected">Graphic Design</span>
                 <span class="tag tag_not-selected">Artwork</span>
             </div>
-            <div class="portfolio__works" id="portfolio_wrap">  
+            <div class="portfolio__works" id="portfolio_wrap">
                 <div class="portfolio__photo" id="border">
                     <img src="assets/images/top_1.png" alt="#">
                     <img src="assets/images/middle_1.png" alt="#">
@@ -135,7 +149,7 @@
                     <img src="assets/images/top_4.png" alt="#">
                     <img src="assets/images/middle_4.png" alt="#">
                     <img src="assets/images/bottom_4.png" alt="#">
-                    
+
                 </div>
             </div>
         </div>
@@ -143,12 +157,15 @@
     <section id="about" class="about-us scroll">
         <div class="container">
             <h2>About Us</h2>
-            <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+            <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi
+                erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor
+                mauris condimentum nibh.</p>
             <div class="about-us__staff-wrapper">
                 <div class="about-us__staff">
                     <img src="assets/images/photo_woman_1.png" alt="woman">
                     <h3>Adam Jensen</h3>
-                    <p>Quisque luctus, quam eget molestie commodo, lacus purus cursus purus, nec rutrum tellus dolor id lorem.</p>
+                    <p>Quisque luctus, quam eget molestie commodo, lacus purus cursus purus, nec rutrum tellus dolor id
+                        lorem.</p>
                     <div class="icons-wrapper">
                         <a href="#" class="icon icons__facebook"></a>
                         <a href="#" class="icon icons__google"></a>
@@ -159,7 +176,8 @@
                 <div class="about-us__staff">
                     <img src="assets/images/photo_man.png" alt="man">
                     <h3>Desmond Miles</h3>
-                    <p>Curabitur vestibulum eget mauris quis laoreet. Phasellus in quam laoreet, viverra lacus ut, ultrices velit.</p>
+                    <p>Curabitur vestibulum eget mauris quis laoreet. Phasellus in quam laoreet, viverra lacus ut,
+                        ultrices velit.</p>
                     <div class="icons-wrapper">
                         <a href="#" class="icon icons__facebook"></a>
                         <a href="#" class="icon icons__google"></a>
@@ -170,47 +188,52 @@
                 <div class="about-us__staff">
                     <img src="assets/images/photo_woman_2.png" alt="woman">
                     <h3>Scolara Visari</h3>
-                    <p>Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis. Quisque condimentum.</p>
+                    <p>Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis. Quisque
+                        condimentum.</p>
                     <div class="icons-wrapper">
                         <a href="#" class="icon icons__facebook"></a>
                         <a href="#" class="icon icons__google"></a>
                         <a href="#" class="icon icons__twitter"></a>
                         <a href="#" class="icon icons__linkedin"></a>
                     </div>
-                </div>               
+                </div>
             </div>
         </div>
     </section>
     <section id="contact" class="contact-us scroll">
         <div class="container">
             <h2>Get a Quote</h2>
-            <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+            <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi
+                erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor
+                mauris condimentum nibh.</p>
             <div class="contact-us__information">
                 <form id="form" class="contact-us__field" method="GET" action="#">
                     <input type="text" name="name" required placeholder="Name(Required)">
                     <input type="email" name="email" required placeholder="Email(Required)">
                     <input id="subject" type="text" name="subject" placeholder="Subject">
-                    <textarea id="textarea_message" name="message" placeholder="Describe your project in detail..."></textarea> 
-                    <button id="btn" class="button">Submit</button> 
-                </form>               
+                    <textarea id="textarea_message" name="message"
+                        placeholder="Describe your project in detail..."></textarea>
+                    <button id="btn" class="button">Submit</button>
+                </form>
                 <div class="contact-us__field">
                     <h3>Contact information</h3>
-                    <p>Quisque hendrerit purus dapibus, ornare nibh vitae, viver-<wbr>ra nibh. Fusce vitae aliquam tellus. Proin sit amet volutpat libero. Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis. </p>
-                    <div class="our-contacts">
-                        <span class="location">Elm St. 14/05 Lost City </span>
-                        <a class="phone-to" href="tel:035283318635">03528 331 86 35</a>
-                        <a class="mail-to" href="mailto:info@singolo.com">info@singolo.com</a>
-                    </div>
+                    <p>Quisque hendrerit purus dapibus, ornare nibh vitae,
+                        viver-<wbr>ra nibh. Fusce vitae aliquam tellus. Proin sit amet volutpat libero. Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis. </p>
+                        <div class="our-contacts">
+                            <span class="location">Elm St. 14/05 Lost City </span>
+                            <a class="phone-to" href="tel:035283318635">03528 331 86 35</a>
+                            <a class="mail-to" href="mailto:info@singolo.com">info@singolo.com</a>
+                        </div>
                 </div>
             </div>
         </div>
-        <div id= "pop-up_form" class="hidden">
+        <div id="pop-up_form" class="hidden">
             <div id="message">
                 <p id="result">Текст</p>
-                <br/>
+                <br />
                 <button id="close-btn">OK</button>
             </div>
-        </div> 
+        </div>
     </section>
     <footer class="footer">
         <div class="container">
@@ -228,4 +251,5 @@
 
     <script src="script.js"></script>
 </body>
+
 </html>

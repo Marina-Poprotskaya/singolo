@@ -54,7 +54,6 @@ body {
 }
 
 .header {
-    
     position: sticky;
     top: 0;
     height: 96px;
@@ -65,6 +64,10 @@ body {
 }
 
 .nav-toggle {
+    display: none;
+}
+
+.nav-close {
     display: none;
 }
 
