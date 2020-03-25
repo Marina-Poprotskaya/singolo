@@ -64,6 +64,31 @@ body {
     z-index: 1001;
 }
 
+.nav-toggle {
+    display: none;
+}
+
+#span-menu {
+    font-family: 'Lato';
+    display: none;
+    color: White;
+    position: absolute;
+    top: 26px;
+    left: 70px;
+    z-index: 100;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+}
+
+#span-menu span {
+    color: #F06C64;
+}
+
+
 .header-wrapper {
     display: flex;
     justify-content: space-between;
