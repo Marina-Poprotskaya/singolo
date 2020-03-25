@@ -10,6 +10,7 @@
 
      .slider {
         height: auto;
+        border-bottom: 0;
     }
 
     #phone-first {
@@ -279,6 +280,18 @@
 
 }
 
+@media (max-width: 700px) {  
+    .turn-off-first {
+        top: 80px;
+        left: 91px;
+    }
+
+    .turn-off-second {
+        top: 140px;
+        right: 143px
+    }
+}
+
 @media (max-width: 650px) {
     body {
         width: 100%;
@@ -299,13 +312,13 @@
     }
 
     .turn-off-first {
-        top: 44px;
-        left: 54px;
+        top: 56px;
+        left: 57px;
     }
 
     .turn-off-second {
         top: 74px;
-        right: 86px;
+        right: 99px;
     }
 
     .left {
@@ -541,6 +554,29 @@
 
 }
 
+@media (max-width: 500px) {  
+    .turn-off-first {
+        top: 48px;
+        left: 55px;
+    }
+
+    .turn-off-second {
+        top: 74px;
+        right: 89px;
+    }
+}
+
+@media (max-width: 425px) {  
+    .turn-off-first {
+        top: 45px;
+        left: 54px;
+    }
+
+    .turn-off-second {
+        top: 73px;
+        right: 85px;
+    }
+}
 
 @media (max-width: 375px) {
     body {
