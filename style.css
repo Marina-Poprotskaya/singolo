@@ -571,7 +571,7 @@ body {
     left: 200px;
     padding-top: 40px;
     width: 600px;
-    height: 200px;
+    height: 220px;
     background-color: rgb(80, 78, 78);
     color: #fff;
     border-radius: 4px;
@@ -592,6 +592,8 @@ body {
 #message p {
     text-align: center;
     font-size: 24px;
+    text-overflow: clip;
+    overflow: hidden;
 }
 
 .contact-us {
