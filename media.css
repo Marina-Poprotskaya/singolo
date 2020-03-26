@@ -13,6 +13,10 @@
         border-bottom: 0;
     }
 
+    .second img {
+        width: 100%;
+    }
+
     #phone-first {
         width: 21%;
         box-shadow: 20px 20px #ce5d56;
@@ -69,6 +73,7 @@
     .services-insert-horizontal {
         flex-direction: column;
         justify-content: start;
+        align-items: center;
     }
     
 
@@ -113,7 +118,7 @@
     }
 
     .about-us__staff img {
-        width: 95%;
+        width: 100%;
     }
 
     #form.contact-us__field {
@@ -222,7 +227,6 @@
 }
 
 @media (max-width: 768px) {
-
     body {
         width: 100%;
     }
@@ -269,18 +273,24 @@
         margin-bottom: 56px;
     }
 
+    .insert-right p {
+        width: 85%;
+    }
+
     .portfolio__photo img {
         margin-bottom: 20px;
         margin-right: 20px;
     }
 
     .about-us__staff {
-        width: 220px;
+        width: 32%;
     }
 
 }
 
-@media (max-width: 700px) {  
+@media (max-width: 700px) { 
+   
+    
     .turn-off-first {
         top: 80px;
         left: 91px;
@@ -479,7 +489,7 @@
     }
 
     .services-insert-tb {
-        width: 80%;
+        width: 65%;
     }
 
     .services-insert-tb {
@@ -504,10 +514,15 @@
 
     .about-us__staff-wrapper {
         flex-direction: column;
+        align-items: center;
     }
 
     .about-us__staff {
         width: 80%;
+    }
+
+    .insert-right p {
+        width: 100%;
     }
 
     .icons-wrapper {
@@ -564,6 +579,10 @@
         top: 74px;
         right: 89px;
     }
+
+    .services-insert-tb {
+        width: 80%;
+    }
 }
 
 @media (max-width: 425px) {  
@@ -575,6 +594,10 @@
     .turn-off-second {
         top: 73px;
         right: 85px;
+    }
+
+    .services-insert-tb {
+        width: 90%;
     }
 }
 
@@ -664,4 +687,8 @@
         top: 38px;
         left: 53px;
     }   
+
+    .insert-right p {
+        width: 98%;
+    }
 }

@@ -157,12 +157,11 @@ body {
 .slider {
     scroll-margin-top: 96px;
     position: relative;
-    height: 600px;
-    background-color: #f06c64;
+    height: 600px; 
+    background-color: #f06c64; 
     border-bottom: 6px solid #ea676b;
     box-sizing: border-box;
 }
-
 
 .left {
     background: url(assets/images/left.png) center no-repeat;
@@ -190,10 +189,6 @@ body {
     top: 278px;
     right: 34px;
     z-index: 5;
-}
-
-.slider {
-    scroll-margin-top: 96px;
 }
 
 .slider-phone {
