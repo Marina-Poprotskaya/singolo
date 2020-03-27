@@ -61,6 +61,11 @@ function onScroll() {
                     sliders[0].classList.add('active-slider');
                 }
             }
+            if (document.querySelector('.active-slider').classList.contains('first')) {
+                document.getElementById('slider').style.backgroundColor = '#f06c64';
+           } else {
+                document.getElementById('slider').style.backgroundColor = '#648BF0'
+           }
         });
 
         ArrowPrev.addEventListener('click', function () {
@@ -81,6 +86,11 @@ function onScroll() {
                     sliders[sliders.length - 1].classList.add('active-slider');
                 }
             }
+            if (document.querySelector('.active-slider').classList.contains('first')) {
+                document.getElementById('slider').style.backgroundColor = '#f06c64';
+           } else {
+                document.getElementById('slider').style.backgroundColor = '#648BF0'
+           }
         });
     };
 
