@@ -1,4 +1,4 @@
-@media (max-width: 980px) {
+@media (max-width: 1019px) {
 
     body {
         width: 100%;
@@ -88,7 +88,7 @@
     .portfolio__works {
         flex-direction: column;
         height: auto;
-        margin-bottom: 52px;
+        margin-bottom: 32px;
     }
 
     .portfolio__works .portfolio__photo {
@@ -269,14 +269,6 @@
         right: 29px;
     }
 
-    .services-insert-tb {
-        margin-bottom: 56px;
-    }
-
-    .insert-right p {
-        width: 85%;
-    }
-
     .portfolio__photo img {
         margin-bottom: 20px;
         margin-right: 20px;
@@ -288,59 +280,10 @@
 
 }
 
-@media (max-width: 700px) { 
-   
+
+
+@media (max-width: 767px) {
     
-    .turn-off-first {
-        top: 80px;
-        left: 91px;
-    }
-
-    .turn-off-second {
-        top: 140px;
-        right: 143px
-    }
-}
-
-@media (max-width: 650px) {
-    body {
-        width: 100%;
-   }
-
-    #phone-first {
-        box-shadow: 10px 10px #ce5d56;
-        border-radius: 12px;
-        top: 19px;
-        left: 50px;
-    }
-
-    #phone-second {
-        box-shadow: 10px 10px #ce5d56;
-        border-radius: 12px;
-        top: 68px;
-        right: 59px;
-    }
-
-    .turn-off-first {
-        top: 56px;
-        left: 57px;
-    }
-
-    .turn-off-second {
-        top: 74px;
-        right: 99px;
-    }
-
-    .left {
-        top: 96px;
-        left: 13px;
-    }
-
-    .right {
-        top: 96px;
-        right: 13px;
-    }
-
     .header {
         height: 71px;
     }
@@ -451,7 +394,6 @@
         margin-left: 70px;
     }
 
-
     .header-insert li:not(:last-child) a {
         padding: 0;
     }
@@ -469,7 +411,6 @@
         display: none;
         }
 
-
     .nav-toggle {
         display: block;
     }
@@ -482,8 +423,7 @@
     input#nav-toggle:checked ~ #span-menu {
         display: block;
     }
-
-
+    
     .services-insert {
         flex-direction: column;
     }
@@ -493,7 +433,7 @@
     }
 
     .services-insert-tb {
-        margin-bottom: 44px;
+        margin-bottom: 30px;
     }
 
     .services-insert-horizontal:first-child {
@@ -510,6 +450,7 @@
 
     .portfolio__photo img:not(:last-child) {
         margin-right: 14px;
+        margin-bottom: 14px;
     }
 
     .about-us__staff-wrapper {
@@ -568,6 +509,60 @@
     }
 
 }
+
+@media (max-width: 700px) { 
+   
+    
+    .turn-off-first {
+        top: 80px;
+        left: 91px;
+    }
+
+    .turn-off-second {
+        top: 140px;
+        right: 143px
+    }
+}
+
+@media (max-width: 650px) {
+    body {
+        width: 100%;
+   }
+
+    #phone-first {
+        box-shadow: 10px 10px #ce5d56;
+        border-radius: 12px;
+        top: 19px;
+        left: 50px;
+    }
+
+    #phone-second {
+        box-shadow: 10px 10px #ce5d56;
+        border-radius: 12px;
+        top: 68px;
+        right: 59px;
+    }
+
+    .turn-off-first {
+        top: 56px;
+        left: 57px;
+    }
+
+    .turn-off-second {
+        top: 74px;
+        right: 99px;
+    }
+
+    .left {
+        top: 96px;
+        left: 13px;
+    }
+
+    .right {
+        top: 96px;
+        right: 13px;
+    }
+} 
 
 @media (max-width: 500px) {  
     .turn-off-first {
@@ -632,12 +627,12 @@
 
     .left {
         top: 96px;
-        left: 13px;
+        left: 5px;
     }
 
     .right {
         top: 96px;
-        right: 13px;
+        right: 5px;
     }
 
     .services-insert-tb {
